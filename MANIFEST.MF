@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+main-Class: com.creditease.math.TestAdd
+Can-Redefine-Classes: true
+
+
+
