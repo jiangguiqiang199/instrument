@@ -1,0 +1,11 @@
+1、创建代理类，包含premain方法
+
+public class Agent {
+
+	public static void premain(String args, Instrumentation inst){
+		System.out.println("hi I am agent");
+		inst.addTransformer(new MonitorTransformer());
+	}
+}
+
+2、创建监控类实现ClassFileTransformer，用于加载目标类文件，修改字节码的方式达到拦截的目的
